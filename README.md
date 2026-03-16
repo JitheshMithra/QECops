@@ -43,7 +43,7 @@ This simulator is designed to explore questions such as:
 3. How do logical error rates scale with increasing code distance?
 4. When do simplified noise models misrepresent QEC performance?
 
-**See Experiments.MD for excecuted experiments related to questions such as these**
+**See EXPERIMENTS.md for excecuted experiments related to questions such as these**
 
 **Output:**
 For a given physical error rate _p_ and the size of the code _n_, the tool will estimate the logical error rate, which is the probability that decoding will fail, and it uses the Monte Carlo simulation by repeatedly sampling random noise.
