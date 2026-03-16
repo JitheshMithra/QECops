@@ -80,6 +80,7 @@ src/
     plot.py
 requirements.txt
 README.md
+EXPERIMENTS.md
 LICENSE
 ExampleResult.png
 .gitignore
