@@ -33,6 +33,16 @@ This project models independent bit-flip noise, where each bit is flipped with a
 **Error correction:**
 Logical information is protected with a reptition code, which encodes one logical bit into multiple physical bits. Decoding is done with majority-vote decoding, which selects the most likely logical value after the noise is applied.
 
+## Research Questions
+
+This simulator is designed to explore questions such as:
+
+1. How sensitive are QEC results to different noise model assumptions?
+2. At what physical error rates does the repetition code begin to fail?
+3. How do logical error rates scale with increasing code distance?
+4. When do simplified noise models misrepresent QEC performance?
+Check Experiments.MD for excecuted experiments related to questions such as these
+
 **Output:**
 For a given physical error rate _p_ and the size of the code _n_, the tool will estimate the logical error rate, which is the probability that decoding will fail, and it uses the Monte Carlo simulation by repeatedly sampling random noise.
 So by producing _p_ across a range of values and comparing the different code sizes, the tool will make a standard diagnostic plot that shows logical error rate vs physical error rate. The plot quantifies the data and shows how effectively the redundancy suppresses the errors and identifies where error correction will succeed or fail.
