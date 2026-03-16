@@ -33,7 +33,7 @@ This project models independent bit-flip noise, where each bit is flipped with a
 **Error correction:**
 Logical information is protected with a reptition code, which encodes one logical bit into multiple physical bits. Decoding is done with majority-vote decoding, which selects the most likely logical value after the noise is applied.
 
-## Research Questions
+**Research Questions:**
 
 This simulator is designed to explore questions such as:
 
