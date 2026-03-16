@@ -41,6 +41,7 @@ This simulator is designed to explore questions such as:
 2. At what physical error rates does the repetition code begin to fail?
 3. How do logical error rates scale with increasing code distance?
 4. When do simplified noise models misrepresent QEC performance?
+
 Check Experiments.MD for excecuted experiments related to questions such as these
 
 **Output:**
