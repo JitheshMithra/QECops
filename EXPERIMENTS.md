@@ -10,6 +10,26 @@ QEC simulator. Each experiment specifies:
 All experiments can be reproduced using the CLI commands provided.
 Experiments get more and more complex the further you scroll down.
 
+## Reproducibility
+
+All experiments in this repository are designed to be fully reproducible.
+
+Key reproducibility settings used across experiments:
+
+| Parameter | Value |
+|----------|------|
+| Random seed | 0 |
+| Simulation method | Monte Carlo sampling |
+| Decoder | Majority vote |
+| Noise model | Independent bit‑flip noise |
+| Trials (default, unless otherwise specified) | 5000 |
+
+All figures and tables can be regenerated using the CLI commands provided in each experiment section.
+
+## Data Availability
+
+Raw simulation outputs can be reproduced by running the commands listed in each experiment section. Plots are generated automatically and saved in the "results" directory under src.
+
 # Experiment 1: Logical Error Scaling With Physical Noise
 
 ## Research Question
@@ -152,5 +172,17 @@ I will run all of them.
 **Conclusion:**
 
 Monte Carlo simulations require sufficiently large trial counts to produce reliable estimates of logical error rates. Increasing the number of trials improves statistical stability and reduces sampling noise.
+
+# Summary
+
+These experiments demonstrate several key properties of the simulator:
+
+- logical error suppression with increasing code distance
+- dependence of logical error rates on physical noise levels
+- convergence behavior of Monte Carlo simulations
+
+Together, these experiments validate the simulator's ability to reproduce expected behavior of repetition-code-based error correction under simplified noise models.
+
+When more versions come out with more noise models and new perks, more experiments will be added to this file.
 
 
