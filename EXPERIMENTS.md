@@ -1,5 +1,3 @@
-# Experiments
-
 This document records reproducible experiments performed using the
 QEC simulator. Each experiment specifies:
 
