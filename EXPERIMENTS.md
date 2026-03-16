@@ -1,4 +1,4 @@
-This document records reproducible experiments performed using the
+[1.txt](https://github.com/user-attachments/files/26033307/1.txt)[1.txt](https://github.com/user-attachments/files/26033301/1.txt)This document records reproducible experiments performed using the
 QEC simulator. Each experiment specifies:
 
 - the research question  
@@ -91,5 +91,62 @@ python -m QECsim.plot --n 3 5 7 --trials 5000 --seed 0 --logicalbit 0 --pmin 0.1
 **Conclusion:** 
 
 Increasing redundancy through larger repetition codes significantly improves logical error suppression when physical error probability is moderate.
+
+# Experiment 3: Monte Carlo Convergence
+
+## Research Question
+
+How many Monte Carlo trials are required for the logical error rate estimate to stabilize?
+
+Since the simulator uses Monte Carlo sampling to estimate logical error rates, the number of trials affects the statistical reliability of the result.
+
+## Setup
+
+| Parameter | Value |
+|----------|------|
+| Code size | n = 5 |
+| Physical error probability (p) | 0.10 |
+| Trial counts tested | 500, 1000, 5000, 10000 |
+| Random seed | 0 |
+
+Noise model: independent bit‑flip noise  
+Decoder: majority vote  
+Simulation method: Monte Carlo sampling  
+
+## Commands
+
+Example commands used to test convergence:
+
+```bash
+python -m QECsim.plot --n 5 --trials 500 --seed 0 --logicalbit 0 --pmin 0.10 --pmax 0.10
+```
+```bash
+python -m QECsim.plot --n 5 --trials 1000 --seed 0 --logicalbit 0 --pmin 0.10 --pmax 0.10
+```
+```bash
+python -m QECsim.plot --n 5 --trials 5000 --seed 0 --logicalbit 0 --pmin 0.10 --pmax 0.10
+```
+```bash
+python -m QECsim.plot --n 5 --trials 10000 --seed 0 --logicalbit 0 --pmin 0.10 --pmax 0.10
+```
+
+I will run all of them.
+
+**Results:**
+
+[1.txt](https://github.com/user-attachments/files/26033322/1.txt)
+[2.txt](https://github.com/user-attachments/files/26033310/2.txt)
+[3.txt](https://github.com/user-attachments/files/26033325/3.txt)[4.txt](https://github.com/user-attachments/files/26033327/4.txt)
+[4.txt](https://github.com/user-attachments/files/26033331/4.txt)
+<img width="877" height="631" alt="image" src="https://github.com/user-attachments/assets/2ae6a861-ac7f-46cf-9a72-b172e606056c" />
+
+## Observations
+- Logical error estimates vary when the number of trials is small due to statistical noise.
+- As the number of Monte Carlo trials increases, the estimated logical error rate stabilizes.
+- Larger trial counts reduce variance in the simulation results.
+
+**Conclusion:**
+
+Monte Carlo simulations require sufficiently large trial counts to produce reliable estimates of logical error rates. Increasing the number of trials improves statistical stability and reduces sampling noise.
 
 
