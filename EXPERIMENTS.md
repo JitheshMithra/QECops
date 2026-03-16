@@ -66,21 +66,12 @@ Noise model: independent bit‑flip noise
 Decoder: majority vote  
 Simulation method: Monte Carlo sampling  
 
-Trials:
-
-5000
-
-Seed:
-
-0
-
-Physical error probability:
-
-p = 0.10
-
-Code sizes tested:
-
-n = 3, 5, 7
+| Parameter | Value |
+|----------|------|
+| Trials | 5000 |
+| Seed | 0 |
+| Physical error probability | p = 0.10 |
+| Code sizes tested | n = 3, 5, 7 |
 
 ## Command
 
