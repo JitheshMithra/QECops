@@ -54,6 +54,51 @@ python -m QECsim.plot --n 3 5 7 --trials 5000 --seed 0 --logicalbit 0 --pmin 0.0
   
 Increasing code distance improves logical error suppression under independent bit‑flip noise, particularly when the physical error probability is small.
 
+# Experiment 2: Code Distance Effect at Fixed Noise
 
+## Research Question
+
+How does increasing repetition code length affect logical error rate at a fixed physical error probability?
+
+## Setup
+
+Noise model: independent bit‑flip noise  
+Decoder: majority vote  
+Simulation method: Monte Carlo sampling  
+
+Trials:
+
+5000
+
+Seed:
+
+0
+
+Physical error probability:
+
+p = 0.10
+
+Code sizes tested:
+
+n = 3, 5, 7
+
+## Command
+
+```bash
+python -m QECsim.plot --n 3 5 7 --trials 5000 --seed 0 --logicalbit 0 --pmin 0.10 --pmax 0.10 --pstep 0.01
+```
+**Results:**
+
+[QECsim_noise_results.txt](https://github.com/user-attachments/files/26032889/QECsim_noise_results.txt)
+<img width="1755" height="1298" alt="plot" src="https://github.com/user-attachments/assets/1f123168-b058-42e6-a968-1d0b8c3e80ab" />
+
+## Observations
+- Logical error decreases significantly as repetition code length increases.
+- Larger codes suppress errors more effectively at the same physical noise level.
+- The n=7 code performs substantially better than the n=3 code.
+
+**Conclusion:** 
+
+Increasing redundancy through larger repetition codes significantly improves logical error suppression when physical error probability is moderate.
 
 
