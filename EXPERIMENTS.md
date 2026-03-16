@@ -1,4 +1,4 @@
-[1.txt](https://github.com/user-attachments/files/26033307/1.txt)[1.txt](https://github.com/user-attachments/files/26033301/1.txt)This document records reproducible experiments performed using the
+This document records reproducible experiments performed using the
 QEC simulator. Each experiment specifies:
 
 - the research question  
