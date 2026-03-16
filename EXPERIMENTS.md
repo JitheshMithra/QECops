@@ -135,9 +135,13 @@ I will run all of them.
 **Results:**
 
 [1.txt](https://github.com/user-attachments/files/26033322/1.txt)
+
 [2.txt](https://github.com/user-attachments/files/26033310/2.txt)
-[3.txt](https://github.com/user-attachments/files/26033325/3.txt)[4.txt](https://github.com/user-attachments/files/26033327/4.txt)
+
+[3.txt](https://github.com/user-attachments/files/26033325/3.txt)
+
 [4.txt](https://github.com/user-attachments/files/26033331/4.txt)
+
 <img width="877" height="631" alt="image" src="https://github.com/user-attachments/assets/2ae6a861-ac7f-46cf-9a72-b172e606056c" />
 
 ## Observations
