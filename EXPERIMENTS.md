@@ -10,6 +10,7 @@ QEC simulator. Each experiment specifies:
 - conclusions  
 
 All experiments can be reproduced using the CLI commands provided.
+Experiments get more and more complex the further you scroll down.
 
 # Experiment 1: Logical Error Scaling With Physical Noise
 
@@ -54,5 +55,7 @@ python -m QECsim.plot --n 3 5 7 --trials 5000 --seed 0 --logicalbit 0 --pmin 0.0
 **Conclusion:**
   
 Increasing code distance improves logical error suppression under independent bit‑flip noise, particularly when the physical error probability is small.
+
+
 
 
