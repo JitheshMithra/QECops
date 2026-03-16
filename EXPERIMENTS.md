@@ -7,24 +7,8 @@ QEC simulator. Each experiment specifies:
 - results  
 - conclusions  
 
-All experiments can be reproduced using the CLI commands provided.
+All experiments in this repository are designed to be fully reproducible using the CLI commands provided, thanks to fixed seed.
 Experiments get more and more complex the further you scroll down.
-
-## Reproducibility
-
-All experiments in this repository are designed to be fully reproducible.
-
-Key reproducibility settings used across experiments:
-
-| Parameter | Value |
-|----------|------|
-| Random seed | 0 |
-| Simulation method | Monte Carlo sampling |
-| Decoder | Majority vote |
-| Noise model | Independent bit‑flip noise |
-| Trials (default, unless otherwise specified) | 5000 |
-
-All figures and tables can be regenerated using the CLI commands provided in each experiment section.
 
 ## Data Availability
 
