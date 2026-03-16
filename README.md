@@ -3,6 +3,8 @@
 **Status:** Baseline code/implementation
 # Open source and reproducible QEC simulator to analyze variations in noise assumptions
 ## Overview:
+# Example Result:
+Logical error rate vs physical error rate for repetition codes under independent bit-flip noise.
 <img width="1919" height="1079" alt="ExampleResult" src="https://github.com/user-attachments/assets/a4bde8dd-818d-40af-824c-e88611f284e7" />
 
 This project is meant to be an open‑source, reproducible, research-grade, and reusable simulation tool made to analyze and simulate how noise assumptions affect the performance of quantum error correction.
