@@ -50,6 +50,7 @@ python -m QECsim.plot --n 3 5 7 --trials 5000 --seed 0 --logicalbit 0 --pmin 0.0
 - Logical error rate decreases as repetition code length increases.
 - Larger codes suppress errors more effectively at low physical error rates.
 - At higher physical error rates, logical errors increase rapidly.
+
 **Conclusion:**
   
 Increasing code distance improves logical error suppression under independent bit‑flip noise, particularly when the physical error probability is small.
