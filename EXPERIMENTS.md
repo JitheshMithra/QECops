@@ -39,6 +39,7 @@ Parameters:
 ```bash
 cd src
 python -m QECsim.plot --n 3 5 7 --trials 5000 --seed 0 --logicalbit 0 --pmin 0.0 --pmax 0.2 --pstep 0.02
+```
 
 **Results:**
 [QECsim_noise_results.txt](https://github.com/user-attachments/files/26032775/QECsim_noise_results.txt)
