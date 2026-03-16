@@ -3,7 +3,7 @@
 **Status:** Baseline code/implementation
 # Open source and reproducible QEC simulator to analyze variations in noise assumptions
 ## Overview:
-### Example Result:
+**Example Result:**
 Logical error rate vs physical error rate for repetition codes under independent bit-flip noise.
 <img width="1919" height="1079" alt="ExampleResult" src="https://github.com/user-attachments/assets/a4bde8dd-818d-40af-824c-e88611f284e7" />
 
