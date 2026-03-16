@@ -9,6 +9,7 @@ Logical error rate vs physical error rate for repetition codes under independent
 
 This project is meant to be an open‑source, reproducible, research-grade, and reusable simulation tool made to analyze and simulate how noise assumptions affect the performance of quantum error correction.
 Quantum error correction depends strongly on assumed noise models, yet many existing simulations are held to specific experiments or papers, and are not open to the public and far-reaching educated use. This tool gives a simple and clear framework for measuring and simulating how error correction performance changes as noise changes and varies. All in all, this project is an open-source research tool for studying how different noise assumptions affect quantum error correction performance through reproducible Monte Carlo simulations.
+
 Simply stated: This tool aims to analyze error correction performance under explicit noise assumptions than measuring noise directly from hardware coded with the python language.
 
 **Why does it matter:**
