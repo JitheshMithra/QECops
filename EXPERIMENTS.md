@@ -10,7 +10,7 @@ QEC simulator. Each experiment specifies:
 All experiments in this repository are designed to be fully reproducible using the CLI commands provided, thanks to fixed seed.
 Experiments get more and more complex the further you scroll down.
 
-## Data Availability
+### Data Availability
 
 Raw simulation outputs can be reproduced by running the commands listed in each experiment section. Plots are generated automatically and saved in the "results" directory under src.
 
