@@ -34,13 +34,6 @@ This project models independent bit-flip noise, where each bit is flipped with a
 **Error correction:**
 Logical information is protected with a reptition code, which encodes one logical bit into multiple physical bits. Decoding is done with majority-vote decoding, which selects the most likely logical value after the noise is applied.
 
-## Technical Reports:
-A detailed explanation of the methodology, experiments, and results is available here:
-
-**v1 Report link:** link soon to be posted once arXiv endorsement is confirmed.
-
-**See /reports for excecuted experiments and more on the stored technical reports related to this project and its methodology**
-
 **Output:**
 For a given physical error rate _p_ and the size of the code _n_, the tool will estimate the logical error rate, which is the probability that decoding will fail, and it uses the Monte Carlo simulation by repeatedly sampling random noise.
 So by producing _p_ across a range of values and comparing the different code sizes, the tool will make a standard diagnostic plot that shows logical error rate vs physical error rate. The plot quantifies the data and shows how effectively the redundancy suppresses the errors and identifies where error correction will succeed or fail.
@@ -82,6 +75,12 @@ LICENSE
 ExampleInput&Output.png
 .gitignore
 ```
+## Technical Reports:
+A detailed explanation of the methodology, experiments, and results is available here:
+
+**v1 Report link:** link soon to be posted once arXiv endorsement is confirmed.
+
+**See /reports for excecuted experiments and more on the stored technical reports related to this project and its methodology**
 
 ## Getting Started:
 ### Installation:
