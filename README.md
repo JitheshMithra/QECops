@@ -73,11 +73,12 @@ src/
     decode.py
     simulation.py
     plot.py
+REPORTS/
+  EXPERIMENTS.md
 requirements.txt
 README.md
-EXPERIMENTS.md
 LICENSE
-ExampleResult.png
+ExampleInput&Output.png
 .gitignore
 ```
 
