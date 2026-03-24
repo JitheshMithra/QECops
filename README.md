@@ -1,4 +1,4 @@
-**Current Version:** v1.0.1
+**Current Version:** v1.0.2
 
 **Status:** Baseline code/implementation
 # Open source and reproducible QEC simulator to analyze variations in noise assumptions
@@ -36,9 +36,9 @@ Logical information is protected with a reptition code, which encodes one logica
 
 ## Technical Reports:
 A detailed explanation of the methodology, experiments, and results is available here:
-**v1 Report link:** link soon to be posted 
+**v1 Report link:** link soon to be posted once arXiv endorsement is confirmed.
 
-**See /reports for excecuted experiments and more on the stored reports related to this project and its methodology**
+**See /reports for excecuted experiments and more on the stored technical reports related to this project and its methodology**
 
 **Output:**
 For a given physical error rate _p_ and the size of the code _n_, the tool will estimate the logical error rate, which is the probability that decoding will fail, and it uses the Monte Carlo simulation by repeatedly sampling random noise.
