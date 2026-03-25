@@ -79,7 +79,7 @@ ExampleInput&Output.png
 ## Technical Reports:
 A detailed explanation of the methodology, experiments, and results is available here:
 
-**v1 Report link:** link soon to be posted once arXiv endorsement is confirmed.
+**arXiv Report link:** link soon to be posted once arXiv endorsement is confirmed.
 
 **See /reports for excecuted experiments and more on the stored technical reports related to this project and its methodology**
 
