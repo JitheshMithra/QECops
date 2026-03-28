@@ -61,7 +61,7 @@ Future extensions/ideas are seen down below under v2 plans.
 **Current Project structure (v1):**
 ```
 src/
-  QECsim/
+  QECops/
     __init__.py
     noise.py
     decode.py
@@ -99,7 +99,7 @@ All simulations are executed from the src directory
 ```bash
 #example simulation:
 cd src
-python -m QECsim.plot --n 3 5 7 --trials 20000 --seed 0 --logicalbit 0 --pmin 0.0 --pmax 0.2 --pstep 0.02
+python -m QECops.plot --n 3 5 7 --trials 20000 --seed 0 --logicalbit 0 --pmin 0.0 --pmax 0.2 --pstep 0.02
 ```
 Command Line arguments:
   - --n: one or more ODD repetition-code lengths
@@ -111,7 +111,7 @@ Command Line arguments:
 Each run will generate timestamped results directory which contains:
   - plot.png: Static plot image of logical error rate vs physical error rate
   - plot.html: interactive Plotly html graph, useful for visualization
-  - QECsim_noise_results.txt: Table numerical values
+  - QECops_noise_results.txt: Table numerical values
 
 These values/outputs will show direct comparison of logical error reduction across different code sizes under specified noise assumptions
 
