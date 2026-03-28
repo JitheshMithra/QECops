@@ -1,7 +1,7 @@
 **Current Version:** v1.1
 
 **Status:** Baseline implementation with analytical validation
-# QECops - Open source and reproducible QEC simulator to analyze variations in noise assumptions
+# QECops
 ## Overview:
 **Example Result:**
 Logical error rate vs physical error rate for repetition codes under independent bit-flip noise.
