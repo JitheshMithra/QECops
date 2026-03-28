@@ -78,7 +78,7 @@ REPORTS/
 requirements.txt
 README.md
 LICENSE
-ExampleInput&Result.png
+ExampleResult.png
 .gitignore
 ```
 ## Technical Reports:
