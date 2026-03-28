@@ -1,6 +1,6 @@
 **Current Version:** v1.1
 
-**Status:** Baseline code/implementation
+**Status:** Baseline implementation with analytical validation
 # Open source and reproducible QEC simulator to analyze variations in noise assumptions
 ## Overview:
 **Example Result:**
@@ -130,7 +130,7 @@ Future additions (v2 plans):
   - Optional saving results as JSON or CSV
 
 ### Acknowledgements:
-- Special Thanks to Daniel Strano from the Unitary Fund for external review and feedback on my methodology.
+- Special thanks to _Daniel Strano_ from the Unitary Fund for external review and feedback on my methodology.
 
 ### License:
 If used or mentioned in published works please cite in the recommended format.
