@@ -58,7 +58,7 @@ This project does not attempt to create or show new error-correction codes or to
 v1 has been successfully pushed! v2 planning/coding has begun.
 Future extensions/ideas are seen down below under v2 plans.
 
-**Intended Project structure (v1):**
+**Current Project structure (v1):**
 ```
 src/
   QECsim/
@@ -73,7 +73,7 @@ REPORTS/
 requirements.txt
 README.md
 LICENSE
-ExampleInput&Output.png
+ExampleInput&Results.png
 .gitignore
 ```
 ## Technical Reports:
@@ -124,14 +124,17 @@ These values/outputs will show direct comparison of logical error reduction acro
 
 Future additions (v2 plans):
   - Extended noise models (biased, correlated)
-  - Compare analytic vs simulated results (overlaying analytic curves and explicit convergence)
   - Log scale plots (users can plot LER on a log scale, clear error suppression, effective distance scaling)
   - Seed control per-p (use rng across entire sweep, improves statistical independence and interpretation)
   - Parameter sweeps BEYOND p 
   - Optional saving results as JSON or CSV
 
+### Acknowledgements:
+- Special Thanks to Daniel Strano from the Unitary Fund for external review and feedback on my methodology.
+
 ### License:
 If used or mentioned in published works please cite in the recommended format.
+
 
 Copyright (c) [2025] [Jithesh Mithra].
 It is licensed under the MIT License, available at [https://github.com/JitheshMithra/Open-source-and-reproducible-QEC-simulator-to-analyze-variations-in-noise-assumptions/edit/main/README.md].
