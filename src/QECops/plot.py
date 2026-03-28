@@ -1,9 +1,6 @@
 #cli input tool that prints values and saves a png + an interactive plot
-<<<<<<< HEAD:src/QECops/plot.py
 #Example cli: cd src/ python -m QECops.plot --n 3 5 7 --trials 10000 --seed 0 --logicalbit 0 --pmin 0.0 --pmax 0.2 --pstep 0.02
-=======
-#Example cli: cd src/ python -m QECsim.plot --n 3 5 7 --trials 10000 --seed 0 --logicalbit 0 --pmin 0.0 --pmax 0.2 --pstep 0.02
->>>>>>> b0f1821aecba966dd67fac14d97b2daaee7a9c75:src/QECsim/plot.py
+
 import argparse
 from datetime import datetime
 from pathlib import Path
@@ -47,8 +44,12 @@ def plotrun(nvalues,pvalues,trials,seed,logicalbit):
    
     #results folder saving
     run_id = datetime.now().strftime("%Y%m%d_%H%M%S_%f")
-    resultsdir = Path("results") /run_id
-    resultsdir.mkdir(parents=True)
+    base_dir = Path.cwd() / "results"
+    base_dir.mkdir(exist_ok=True)
+
+    resultsdir = base_dir / run_id
+    resultsdir.mkdir(exist_ok=True)
+    print("Saving results to:", resultsdir.resolve())
 
     allresults={}
 
