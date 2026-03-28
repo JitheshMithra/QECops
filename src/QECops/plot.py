@@ -1,5 +1,9 @@
 #cli input tool that prints values and saves a png + an interactive plot
+<<<<<<< HEAD:src/QECops/plot.py
 #Example cli: cd src/ python -m QECops.plot --n 3 5 7 --trials 10000 --seed 0 --logicalbit 0 --pmin 0.0 --pmax 0.2 --pstep 0.02
+=======
+#Example cli: cd src/ python -m QECsim.plot --n 3 5 7 --trials 10000 --seed 0 --logicalbit 0 --pmin 0.0 --pmax 0.2 --pstep 0.02
+>>>>>>> b0f1821aecba966dd67fac14d97b2daaee7a9c75:src/QECsim/plot.py
 import argparse
 from datetime import datetime
 from pathlib import Path
