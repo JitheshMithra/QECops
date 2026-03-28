@@ -4,11 +4,12 @@
 # QECops
 ## Overview:
 **Example Result:**
-Logical error rate vs physical error rate for repetition codes under independent bit-flip noise.
-<img width="1919" height="1079" alt="ExampleResult" src="https://github.com/user-attachments/assets/a4bde8dd-818d-40af-824c-e88611f284e7" />
+Logical error rate vs physical error rate for repetition codes under independent bit-flip noise, including analytical validation with binomial distribution.
+<img width="1910" height="1018" alt="Screenshot 2026-03-28 095221" src="https://github.com/user-attachments/assets/e0b6846a-d227-4d7b-bfea-b8c97c34de2b" />
+
 
 This project is meant to be an open‑source, reproducible, research-grade, and reusable simulation tool made to analyze and simulate how noise assumptions affect the performance of quantum error correction.
-Quantum error correction depends strongly on assumed noise models, yet many existing simulations are held to specific experiments or papers, and are not open to the public and far-reaching educated use. This tool gives a simple and clear framework for measuring and simulating how error correction performance changes as noise changes and varies. All in all, this project is an open-source research tool for studying how different noise assumptions affect quantum error correction performance through reproducible Monte Carlo simulations. I hope to answer **How sensitive are QEC results to noise assumptions.**
+Quantum error correction depends strongly on assumed noise models, yet many existing simulations are held to specific experiments or papers, and are not open to the public and far-reaching educated use. This tool gives a simple and clear framework for measuring and simulating how error correction performance changes as noise changes and varies. All in all, this project is an open-source research tool for studying how different noise assumptions affect quantum error correction performance through reproducible Monte Carlo simulations, also including analytical. I hope to answer **How sensitive are QEC results to noise assumptions.**
 
 Simply stated: This tool aims to analyze error correction performance under explicit noise assumptions than measuring noise directly from hardware coded with the python language.
 
@@ -67,6 +68,7 @@ src/
     decode.py
     simulation.py
     plot.py
+    analytical.py
 REPORTS/
   EXPERIMENTS.md
   reportlinks.md
