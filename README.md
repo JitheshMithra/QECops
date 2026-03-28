@@ -101,7 +101,7 @@ All simulations are executed from the src directory
 ```bash
 #example simulation:
 cd src
-python -m QECsim.plot --n 3 5 7 --trials 5000 --seed 0 --logicalbit 0 --pmin 0.0 --pmax 0.2 --pstep 0.02
+python -m QECsim.plot --n 3 5 7 --trials 20000 --seed 0 --logicalbit 0 --pmin 0.0 --pmax 0.2 --pstep 0.02
 ```
 Command Line arguments:
   - --n: one or more ODD repetition-code lengths
