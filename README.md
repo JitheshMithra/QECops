@@ -9,9 +9,9 @@ Logical error rate vs physical error rate for repetition codes under independent
 
 
 This project is meant to be an open‑source, reproducible, research-grade, and reusable simulation tool made to analyze and simulate how noise assumptions affect the performance of quantum error correction.
-Quantum error correction depends strongly on assumed noise models, yet many existing simulations are held to specific experiments or papers, and are not open to the public and far-reaching educated use. This tool gives a simple and clear framework for measuring and simulating how error correction performance changes as noise changes and varies. All in all, this project is an open-source research tool for studying how different noise assumptions affect quantum error correction performance through reproducible Monte Carlo simulations, also including analytical. I hope to answer **How sensitive are QEC results to noise assumptions.**
+Quantum error correction depends strongly on assumed noise models, yet many existing simulations are held to specific experiments or papers, and are not open to the public and far-reaching educated use. This tool gives a simple and clear framework for measuring and simulating how error correction performance changes as noise changes and varies. All in all, this project is an open-source research tool for studying how different noise assumptions affect quantum error correction performance through reproducible Monte Carlo simulations, also including analytical binomial distribution for comparison with theoretical validation. I hope to answer **How sensitive are QEC results to noise assumptions.**
 
-Simply stated: This tool aims to analyze error correction performance under explicit noise assumptions than measuring noise directly from hardware coded with the python language.
+_Simply stated: This tool aims to analyze error correction performance under explicit noise assumptions than measuring noise directly from hardware coded with the python language._
 
 **Why does it matter:**
 Error correction suppresses noise only under certain conditions, so small changes in noise assumptions can lead to very large differences in outputs/conclusions.
@@ -26,11 +26,13 @@ This tool makes those assumptions inspectable, transparent and reproducible, thu
   - Will apply a repetition code
   - Will decode using majority-vote decoding
   - Measures logical error as a function of physical error rate
+  - Plots the analytical curve based on binomial distribution
 
 Primary output is essentially a standard diagnostic plot used in many quantum error correction research - being logical error rate vs physical error rate, but for different code sizes.
 
 **Noise Model:**
 This project models independent bit-flip noise, where each bit is flipped with a probability known as _p_. This represents assumed hardware error rate, which is supplied as an input to the simulation.
+The tool also finds the analytical logical error rate using the binomial probability model so as to validate the monte carlo results.
 
 **Error correction:**
 Logical information is protected with a reptition code, which encodes one logical bit into multiple physical bits. Decoding is done with majority-vote decoding, which selects the most likely logical value after the noise is applied.
@@ -52,6 +54,7 @@ Currently:
   - no correlated errors
   - classical repetition code
   - majority vote decoding
+  - Analytical binomial distribution
 
 This project does not attempt to create or show new error-correction codes or to prove theoretical thresholds and boundaries. It is made and intended to be used as a measurement and analysis tool, **NOT** a theory checker or unfound breakthrough, just an easy tool for all to use.
 
@@ -111,8 +114,8 @@ Command Line arguments:
   - --seed: Random seed for reproducibility
 ### Output:
 Each run will generate timestamped results directory which contains:
-  - plot.png: Static plot image of logical error rate vs physical error rate
-  - plot.html: interactive Plotly html graph, useful for visualization
+  - plot.png: Static plot image of logical error rate vs physical error rate and analytical curve
+  - plot.html: interactive Plotly html graph, useful for visualization and analytical curve
   - QECops_noise_results.txt: Table numerical values
 
 These values/outputs will show direct comparison of logical error reduction across different code sizes under specified noise assumptions
@@ -131,6 +134,7 @@ Future additions (v2 plans):
 
 ### Acknowledgements:
 - Special thanks to _Daniel Strano_ from the Unitary Fund for external review and feedback on my methodology.
+- Special thanks to Dr. Thomas Scruby from the Okinawa Institute of Science and Technology (OIST) for external review and possible extensions in this project
 
 ### License:
 If used or mentioned in published works please cite in the recommended format.
