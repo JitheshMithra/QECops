@@ -1,5 +1,6 @@
 #cli input tool that prints values and saves a png + an interactive plot
-#Example cli: cd src/ python -m QECsim.plot --n 3 5 7 --trials 10000 --seed 0 --logicalbit 0 --pmin 0.0 --pmax 0.2 --pstep 0.02
+#Example cli: cd src/ python -m QECops.plot --n 3 5 7 --trials 10000 --seed 0 --logicalbit 0 --pmin 0.0 --pmax 0.2 --pstep 0.02
+
 import argparse
 from datetime import datetime
 from pathlib import Path
@@ -54,7 +55,7 @@ def plotrun(nvalues,pvalues,trials,seed,logicalbit):
    
     #table outputs
     print("n p logical_error_rate")
-    with open(resultsdir/"QECsim_noise_results.txt", "w") as f:
+    with open(resultsdir/"QECops_noise_results.txt", "w") as f:
         f.write("n p logical_error_rate analytical_logical_error\n")
         for n in nvalues:
             for p, ler in allresults[n]:
