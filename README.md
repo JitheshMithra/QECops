@@ -1,7 +1,7 @@
 **Current Version:** v1.1
 
 **Status:** Baseline implementation with analytical validation
-# QECops - Open source and reproducible QEC simulator to analyze variations in noise assumptions
+# QECops
 ## Overview:
 **Example Result:**
 Logical error rate vs physical error rate for repetition codes under independent bit-flip noise.
@@ -87,8 +87,8 @@ Make sure to download/update latest versions of pip, python, git, and related pa
 
 Clone the repository:
 ```bash
-git clone https://github.com/JitheshMithra/Open-source-and-reproducible-QEC-simulator-to-analyze-variations-in-noise-assumptions.git
-cd Open-source-and-reproducible-QEC-simulator-to-analyze-variations-in-noise-assumptions
+git clone https://github.com/JitheshMithra/QECops.git
+cd QECops
 ```
 Install required dependencies:
 ```bash
@@ -135,6 +135,6 @@ If used or mentioned in published works please cite in the recommended format.
 
 
 Copyright (c) [2025] [Jithesh Mithra].
-It is licensed under the MIT License, available at [https://github.com/JitheshMithra/Open-source-and-reproducible-QEC-simulator-to-analyze-variations-in-noise-assumptions/edit/main/README.md].
+It is licensed under the MIT License, available at [https://github.com/JitheshMithra/QECops].
 
 Also check License page in files.
