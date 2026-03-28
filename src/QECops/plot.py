@@ -61,7 +61,7 @@ def plotrun(nvalues,pvalues,trials,seed,logicalbit):
         allresults[n]= psweep(n, pvalues, trials, seed, logicalbit)
    
     #table outputs
-    print("n p logical_error_rate")
+    print("n p logical_error_rate analytical_logical_error")
     with open(resultsdir/"QECops_noise_results.txt", "w") as f:
         f.write("n p logical_error_rate analytical_logical_error\n")
         for n in nvalues:
