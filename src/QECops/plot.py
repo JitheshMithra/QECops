@@ -44,8 +44,15 @@ def plotrun(nvalues,pvalues,trials,seed,logicalbit):
    
     #results folder saving
     run_id = datetime.now().strftime("%Y%m%d_%H%M%S_%f")
-    resultsdir = Path("results") /run_id
-    resultsdir.mkdir(parents=True)
+    run_id = datetime.now().strftime("%Y%m%d_%H%M%S_%f")
+    
+    base_dir = Path.cwd() / "results"
+    base_dir.mkdir(exist_ok=True)
+    
+    resultsdir = base_dir / run_id
+    resultsdir.mkdir(exist_ok=True)
+    
+    print("Saving results to:", resultsdir.resolve())
 
     allresults={}
 
