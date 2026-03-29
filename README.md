@@ -137,7 +137,7 @@ These values/outputs will show direct comparison of logical error reduction acro
 
 Future additions (v2 plans):
   - Extended noise models (biased, correlated)
-  - Log scale plots (users can plot LER on a log scale, clear error suppression, effective distance scaling)
+  - Log scale plots for Monte Carlo (users can plot LER on a log scale, clear error suppression, effective distance scaling)
   - Seed control per-p (use rng across entire sweep, improves statistical independence and interpretation)
   - Parameter sweeps BEYOND p 
   - Optional saving results as JSON or CSV
