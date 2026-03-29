@@ -9,12 +9,12 @@ Logical error rate vs physical error rate for repetition codes under independent
 <img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/abdf2ea5-76fb-451e-8e4e-10e4b5076528" />
 
 
-This project provides an open-source, reproducible simulation framework for analyzing how noise assumptions affect quantum error correction (QEC) performance. This project investigates **How sensitive are QEC results to noise assumptions.**
+This project provides an open-source, reproducible simulation framework for analyzing how noise assumptions affect quantum error correction (QEC) performance. This project investigates: **How sensitive are QEC results to noise assumptions?**
 
 This tool focuses on a simple but fundamental setting: repetition codes under independent bit-flip noise, comparing Monte Carlo simulation with exact analytical predictions.
 
 **Why does it matter:**
-Many existing tools are held to large institutions, this tool is open to the public, free, and completely open-source.
+Many existing tools are held to large institutions or complex, this tool is open to the public, lightweight, and completely open-source.
 
 Error correction suppresses noise only under certain conditions, so small changes in noise assumptions can lead to very large differences in outputs/conclusions.
 
@@ -39,7 +39,7 @@ This project models independent bit-flip noise, where each bit is flipped with a
 The tool also finds the analytical logical error rate using the binomial probability model so as to validate the Monte Carlo results which are based on repeated random trials.
 
 **Error correction:**
-Logical information is protected with a reptition code, which encodes one logical bit into multiple physical bits. Decoding is done with majority-vote decoding, which selects the most likely logical value after the noise is applied.
+Logical information is protected with a repetition code, which encodes one logical bit into multiple physical bits. Decoding is done with majority-vote decoding, which selects the most likely logical value after the noise is applied.
 
 **Output:**
 For a given physical error rate _p_ and the size of the code _n_, the tool will estimate the logical error rate, which is the probability that decoding will fail, and it uses the Monte Carlo simulation by repeatedly sampling random noise.
@@ -128,7 +128,7 @@ Each run will generate timestamped results directory which contains:
   - plot.html: interactive Plotly html graph, useful for visualization and analytical curve
   - QECops_noise_results.txt: Table numerical values
 
-These values/outputs will show direct comparison of logical error reduction across different code sizes under specified noise assumptions
+These outputs provide a direct comparison between simulation and analytical predictions, including quantitative validation through the absolute error subplot.
 
 ### Reproducibility:
   - All simulations are fully reproducible using the fixed random seeds specified in the CLI
