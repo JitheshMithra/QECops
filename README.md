@@ -1,4 +1,4 @@
-**Current Version:** v1.1
+**Current Version:** v1.2
 
 **Status:** Baseline implementation with analytical validation
 # QECops - Reproducible Quantum Error Correction Simulator 
