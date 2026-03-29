@@ -138,7 +138,7 @@ Future additions (v2 plans):
   - Optional saving results as JSON or CSV
 
 ### Acknowledgements:
-- Special thanks to _Daniel Strano_ from the Unitary Fund for external review and consistent feedback and mentoring on my methodology.
+- Special thanks to _Daniel Strano_ from the Unitary Fund for external review and consistent feedback and mentoring on my methodology
 - Special thanks to _Dr. Thomas Scruby_ from the Okinawa Institute of Science and Technology (OIST) for external review and possible extensions in this project
 
 ### License:
