@@ -8,6 +8,7 @@ Logical error rate vs physical error rate for repetition codes under independent
 
 <img width="1910" height="1018" alt="Screenshot 2026-03-28 095221" src="https://github.com/user-attachments/assets/e0b6846a-d227-4d7b-bfea-b8c97c34de2b" />
 
+
 This project provides an open-source, reproducible simulation framework for analyzing how noise assumptions affect quantum error correction (QEC) performance. This project investigates **How sensitive are QEC results to noise assumptions.**
 
 This tool focuses on a simple but fundamental setting: repetition codes under independent bit-flip noise, comparing Monte Carlo simulation with exact analytical predictions.
