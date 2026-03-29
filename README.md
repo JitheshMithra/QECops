@@ -6,7 +6,7 @@
 **Example Result:**
 Logical error rate vs physical error rate for repetition codes under independent bit-flip noise, including analytical validation with binomial distribution.
 
-<img width="1910" height="1018" alt="Screenshot 2026-03-28 095221" src="https://github.com/user-attachments/assets/e0b6846a-d227-4d7b-bfea-b8c97c34de2b" />
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/abdf2ea5-76fb-451e-8e4e-10e4b5076528" />
 
 
 This project provides an open-source, reproducible simulation framework for analyzing how noise assumptions affect quantum error correction (QEC) performance. This project investigates **How sensitive are QEC results to noise assumptions.**
