@@ -4,7 +4,7 @@
 # QECops - Reproducible Quantum Error Correction Simulator 
 ## Overview:
 **Example Result:**
-Logical error rate vs physical error rate for repetition codes under independent bit-flip noise, including analytical validation with binomial distribution.
+Logical error rate vs physical error rate for repetition codes under independent bit-flip noise, including analytical validation with binomial distribution. The output also includes an absolute error analysis subplot showing |simulation − analytical| on a log scale to quantify the agreement between the Monte Carlo results and Analytical results.
 
 <img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/abdf2ea5-76fb-451e-8e4e-10e4b5076528" />
 
@@ -30,6 +30,7 @@ This tool makes those assumptions inspectable, transparent and reproducible, thu
   - Will decode using majority-vote decoding
   - Measures logical error as a function of physical error rate
   - Plots the analytical curve based on binomial distribution
+  - Quantifies agreement between simulation and analytical results using absolute error analysis
 
 Primary output is essentially a standard diagnostic plot used in many quantum error correction research - being logical error rate vs physical error rate, but for different code sizes.
 
@@ -44,7 +45,7 @@ Logical information is protected with a reptition code, which encodes one logica
 For a given physical error rate _p_ and the size of the code _n_, the tool will estimate the logical error rate, which is the probability that decoding will fail, and it uses the Monte Carlo simulation by repeatedly sampling random noise.
 So by producing _p_ across a range of values and comparing the different code sizes, the tool will make a standard diagnostic plot that shows logical error rate vs physical error rate. The plot quantifies the data and shows how effectively the redundancy suppresses the errors and identifies where error correction will succeed or fail.
 
-As for the analytical curve, it uses binomial distribution to calculate the theoretical baseline. The similarity between each curve shows validation.
+As for the analytical curve, it uses binomial distribution to calculate the theoretical baseline. The similarity between each curve, along with the absolute error subplot, indicates quantitative validation of the simulation.
 
 ### Limitations:
   - The tool does not measure hardware noise, it analyzes the error correction performance of a given assumed noise parameters
@@ -121,7 +122,9 @@ Command Line arguments:
   - --seed: Random seed for reproducibility
 ### Output:
 Each run will generate timestamped results directory which contains:
-  - plot.png: Static plot image of logical error rate vs physical error rate and analytical curve
+  - plot.png: Static plot containing:
+    - Logical error rate vs physical error rate (Monte Carlo vs analytical)
+    - Absolute error subplot |simulation − analytical| (log scale) for validation
   - plot.html: interactive Plotly html graph, useful for visualization and analytical curve
   - QECops_noise_results.txt: Table numerical values
 
