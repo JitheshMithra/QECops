@@ -1,19 +1,21 @@
 **Current Version:** v1.1
 
 **Status:** Baseline implementation with analytical validation
-# QECops
+# QECops - Reproducible Quantum Error Correction Simulator 
 ## Overview:
 **Example Result:**
 Logical error rate vs physical error rate for repetition codes under independent bit-flip noise, including analytical validation with binomial distribution.
 <img width="1910" height="1018" alt="Screenshot 2026-03-28 095221" src="https://github.com/user-attachments/assets/e0b6846a-d227-4d7b-bfea-b8c97c34de2b" />
 
-This project provides a reproducible simulation framework for analyzing how noise assumptions affect quantum error correction (QEC) performance. This project investigates **How sensitive are QEC results to noise assumptions.**
+This project provides an open-source, reproducible simulation framework for analyzing how noise assumptions affect quantum error correction (QEC) performance. This project investigates **How sensitive are QEC results to noise assumptions.**
 
 This tool focuses on a simple but fundamental setting: repetition codes under independent bit-flip noise, comparing Monte Carlo simulation with exact analytical predictions.
 
 **Why does it matter:**
 Many existing tools are held to large institutions, this tool is open to the public, free, and completely open-source.
+
 Error correction suppresses noise only under certain conditions, so small changes in noise assumptions can lead to very large differences in outputs/conclusions.
+
 This tool makes those assumptions inspectable, transparent and reproducible, thus allowing users to:
   - test the strength of results
   - compare code sizes
@@ -31,7 +33,7 @@ Primary output is essentially a standard diagnostic plot used in many quantum er
 
 **Noise Model:**
 This project models independent bit-flip noise, where each bit is flipped with a probability known as _p_. This represents assumed hardware error rate, which is supplied as an input to the simulation.
-The tool also finds the analytical logical error rate using the binomial probability model so as to validate the monte carlo results which are based on repeated random trials.
+The tool also finds the analytical logical error rate using the binomial probability model so as to validate the Monte Carlo results which are based on repeated random trials.
 
 **Error correction:**
 Logical information is protected with a reptition code, which encodes one logical bit into multiple physical bits. Decoding is done with majority-vote decoding, which selects the most likely logical value after the noise is applied.
@@ -39,7 +41,8 @@ Logical information is protected with a reptition code, which encodes one logica
 **Output:**
 For a given physical error rate _p_ and the size of the code _n_, the tool will estimate the logical error rate, which is the probability that decoding will fail, and it uses the Monte Carlo simulation by repeatedly sampling random noise.
 So by producing _p_ across a range of values and comparing the different code sizes, the tool will make a standard diagnostic plot that shows logical error rate vs physical error rate. The plot quantifies the data and shows how effectively the redundancy suppresses the errors and identifies where error correction will succeed or fail.
-As for the analytical curve, it uses binomial distribution to calculate the theorethical baseline. The similarity between each curve shows validation.
+
+As for the analytical curve, it uses binomial distribution to calculate the theoretical baseline. The similarity between each curve shows validation.
 
 ### Limitations:
   - The tool does not measure hardware noise, it analyzes the error correction performance of a given assumed noise parameters
@@ -49,6 +52,7 @@ As for the analytical curve, it uses binomial distribution to calculate the theo
 The goal of this project is to give a simple, transparent, and reproducible simulation framework open to the public for studying how noise assumptions can change and impact error correction and its results.
 
 **Assumptions:**
+
 Currently:
   - Independent bit flip noise
   - no correlated errors
@@ -59,6 +63,7 @@ Currently:
 This project does not attempt to create or show new error-correction codes or to prove theoretical thresholds and boundaries. It is made and intended to be used as a measurement and analysis tool, **NOT** a theory checker or unfound breakthrough, just an easy tool for all to use.
 
 **Project status:**
+
 v1 has been successfully pushed! v2 planning/coding has begun.
 Future extensions/ideas are seen down below under v2 plans.
 
