@@ -1,7 +1,7 @@
 **Current Version:** v1.2
 
 **Status:** Baseline implementation with analytical validation
-# QECops - Reproducible Quantum Error Correction Simulator 
+# QECops - Open-Source and Reproducible Quantum Error Correction Simulator 
 ## Overview:
 **Example Result:**
 Logical error rate vs physical error rate for repetition codes under independent bit-flip noise, including analytical validation with binomial distribution. The output also includes an absolute error analysis subplot showing |simulation − analytical| on a log scale to quantify the agreement between the Monte Carlo results and Analytical results.
