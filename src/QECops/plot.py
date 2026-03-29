@@ -44,7 +44,6 @@ def plotrun(nvalues,pvalues,trials,seed,logicalbit):
    
     #results folder saving
     run_id = datetime.now().strftime("%Y%m%d_%H%M%S_%f")
-    run_id = datetime.now().strftime("%Y%m%d_%H%M%S_%f")
     
     base_dir = Path.cwd() / "results"
     base_dir.mkdir(exist_ok=True)
@@ -71,28 +70,39 @@ def plotrun(nvalues,pvalues,trials,seed,logicalbit):
                 print(line)
                 f.write(line+"\n")
    
-    #plot saving as png
+    #plot saving as png (UPDATED WITH ERROR SUBPLOT)
+    fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(6, 8), sharex=True)
+
     for n in nvalues:
         results = allresults[n]
-        
-        x=[p for p, ler in results]
-        ysim=[ler for p, ler in results]
-        
-        yanalytics=[]
-        
-        for p in x:
-            yanalytics.append(analytical_logical_error(n, p))
-        
-        plt.plot(x,ysim,marker='o', label="n="+str(n)+" Monte Carlo")
-        plt.plot(x,yanalytics, linestyle='--', label='n=' +str(n)+" Analytical")
-        
-        
-    plt.xlabel("Physical error rate (p)")
-    plt.ylabel("Logical error rate")
-    plt.legend(title="Repetition code length (n)")
+
+        x = [p for p, ler in results]
+        ysim = [ler for p, ler in results]
+        yanalytics = [analytical_logical_error(n, p) for p in x]
+
+        # absolute error
+        yerror = [abs(s - a) for s, a in zip(ysim, yanalytics)]
+
+        # --- TOP PLOT (main curves) ---
+        ax1.plot(x, ysim, marker='o', label=f"n={n} Monte Carlo")
+        ax1.plot(x, yanalytics, linestyle='--', label=f"n={n} Analytical")
+
+        # --- BOTTOM PLOT (error) ---
+        ax2.plot(x, yerror, marker='x', label=f"n={n}")
+
+    # labels
+    ax1.set_ylabel("Logical error rate")
+    ax1.legend()
+
+    ax2.set_xlabel("Physical error rate (p)")
+    ax2.set_ylabel("|Sim - Analytic|")
+    ax2.legend(title="n")
+    ax2.set_yscale("log")
+    
+    plt.tight_layout()
     plt.savefig(resultsdir/"plot.png", dpi=300, bbox_inches="tight")
     plt.close()
-
+    
     # interactive plot
     fig = go.Figure()
 
