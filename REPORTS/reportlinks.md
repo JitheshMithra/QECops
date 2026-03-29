@@ -1,2 +1,3 @@
 ## Report Links & PDF
-**v1:** [Reproducible_Analysis_of_Logical_Error_Rates_in_Repetition_Codes_under_Independent_Bit_Flip_Noise__Technical_Report.pdf](https://github.com/user-attachments/files/26327810/Reproducible_Analysis_of_Logical_Error_Rates_in_Repetition_Codes_under_Independent_Bit_Flip_Noise__Technical_Report.pdf)
+**v1:** [Reproducible_Analysis_of_Logical_Error_Rates_in_Repetition_Codes_under_Independent_Bit_Flip_Noise__Technical_Report.pdf](https://github.com/user-attachments/files/26335753/Reproducible_Analysis_of_Logical_Error_Rates_in_Repetition_Codes_under_Independent_Bit_Flip_Noise__Technical_Report.pdf)
+
