@@ -88,6 +88,10 @@ This tool takes a noise assumption as input and shows you what error correction 
 - Noise is assumed to be independent, no correlated or biased errors YET
 - Only repetition codes and majority-vote decoding are currently supported
 - Does not connect with real hardware
+- Assumes product-state initialization (|0...0⟩)
+- Uses a simplified bit-flip noise model
+- Does not yet model full quantum states
+- Not a circuit-level noise model
 
 **Future additions (v2 plans):**
   - Extended noise models (biased, correlated)
@@ -96,6 +100,10 @@ This tool takes a noise assumption as input and shows you what error correction 
   - Parameter sweeps BEYOND p 
   - Optional saving results as JSON or CSV
   - Switch from absolute error analysis to relative error analysis for better comparing in low probability regions
+  - Superposition states (e.g., Bell, GHZ)
+  - Density matrixes
+  - Circuit-level noise modeling
+  - Exploring more advanced QEC codes using tools like [Stim]([url](https://github.com/quantumlib/Stim))
 
 ### Acknowledgements:
 - Special thanks to _Daniel Strano_, developer of Qrack, from the Unitary Fund for external review and consistent feedback and mentoring on my methodology
