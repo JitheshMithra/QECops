@@ -141,6 +141,7 @@ Future additions (v2 plans):
   - Seed control per-p (use rng across entire sweep, improves statistical independence and interpretation)
   - Parameter sweeps BEYOND p 
   - Optional saving results as JSON or CSV
+  - Switch from absolute error analysis to relative error analysis for better comparing in low probability regions
 
 ### Acknowledgements:
 - Special thanks to _Daniel Strano_ from the Unitary Fund for external review and consistent feedback and mentoring on my methodology
