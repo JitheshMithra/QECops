@@ -2,68 +2,22 @@
 
 **Status:** Baseline implementation with analytical validation
 # QECops - Reproducible Quantum Error Correction Simulator 
-## Overview:
 **Example Result:**
-Logical error rate vs physical error rate for repetition codes under independent bit-flip noise, including analytical validation with binomial distribution. The output also includes an absolute error analysis subplot showing |simulation − analytical| on a log scale to quantify the agreement between the Monte Carlo results and Analytical results.
+Logical error rate vs physical error rate for n=3,5,7 repetition codes, with analytical (binomial)
+overlay and absolute error subplot on log scale
 
 <img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/abdf2ea5-76fb-451e-8e4e-10e4b5076528" />
 
+This tool is a lightweight, open-source simulator for studying how noise assumptions affect Quantum Error Correction (QEC) performance. The question that it seeks to answer is: _How sensitive are QEC results to specific noise models?_
 
-This project provides an open-source, reproducible simulation framework for analyzing how noise assumptions affect quantum error correction (QEC) performance. This project investigates: **How sensitive are QEC results to noise assumptions?**
+### What it does
+  - This tool applies independent bit flip noise at rate _p_ to a repetition code of length _n_
+  - It decodes using majority-vote
+  - It sweeps _p_ across a range which you can configure and estimates logical error rate with Monte Carlo estimation model
+  - This tool computes the exact analytical baseline using the binomial distribution model
+  - It will output a plot with both corves and an absolute error subplot (log-scaled) to validate the agreement
 
-This tool focuses on a simple but fundamental setting: repetition codes under independent bit-flip noise, comparing Monte Carlo simulation with exact analytical predictions.
-
-**Why does it matter:**
-Many existing tools are held to large institutions or complex, this tool is open to the public, lightweight, and completely open-source.
-
-Error correction suppresses noise only under certain conditions, so small changes in noise assumptions can lead to very large differences in outputs/conclusions.
-
-This tool makes those assumptions inspectable, transparent and reproducible, thus allowing users to:
-  - test the strength of results
-  - compare code sizes
-  - understand failure behaviors
-  - reproduce and resimulate baseline behaviors easily
-
-### This tool aims to:
-  - Simulate bit-flip noise
-  - Will apply a repetition code
-  - Will decode using majority-vote decoding
-  - Measures logical error as a function of physical error rate
-  - Plots the analytical curve based on binomial distribution
-  - Quantifies agreement between simulation and analytical results using absolute error analysis
-
-Primary output is essentially a standard diagnostic plot used in many quantum error correction research - being logical error rate vs physical error rate, but for different code sizes.
-
-**Noise Model:**
-This project models independent bit-flip noise, where each bit is flipped with a probability known as _p_. This represents assumed hardware error rate, which is supplied as an input to the simulation.
-The tool also finds the analytical logical error rate using the binomial probability model so as to validate the Monte Carlo results which are based on repeated random trials.
-
-**Error correction:**
-Logical information is protected with a repetition code, which encodes one logical bit into multiple physical bits. Decoding is done with majority-vote decoding, which selects the most likely logical value after the noise is applied.
-
-**Output:**
-For a given physical error rate _p_ and the size of the code _n_, the tool will estimate the logical error rate, which is the probability that decoding will fail, and it uses the Monte Carlo simulation by repeatedly sampling random noise.
-So by producing _p_ across a range of values and comparing the different code sizes, the tool will make a standard diagnostic plot that shows logical error rate vs physical error rate. The plot quantifies the data and shows how effectively the redundancy suppresses the errors and identifies where error correction will succeed or fail.
-
-As for the analytical curve, it uses binomial distribution to calculate the theoretical baseline. The similarity between each curve, along with the absolute error subplot, indicates quantitative validation of the simulation.
-
-### Limitations:
-  - The tool does not measure hardware noise, it analyzes the error correction performance of a given assumed noise parameters
-  - Noise is assumed to be independent and uncorrelated
-  - The current version mode focuses on repetition codes and majority-vote decoding
-
-The goal of this project is to give a simple, transparent, and reproducible simulation framework open to the public for studying how noise assumptions can change and impact error correction and its results.
-
-**Assumptions:**
-
-Currently:
-  - Independent bit flip noise
-  - no correlated errors
-  - classical repetition code
-  - majority vote decoding
-  - Analytical binomial distribution
-
-This project does not attempt to create or show new error-correction codes or to prove theoretical thresholds and boundaries. It is made and intended to be used as a measurement and analysis tool, **NOT** a theory checker or unfound breakthrough, just an easy tool for all to use.
+Most QEC tools are held to large institutions or require significant setup. This tool runs from the command line and has no other dependencies, being fully reproducible with fixed seed.
 
 **Project status:**
 
@@ -122,20 +76,25 @@ Command Line arguments:
   - --seed: Random seed for reproducibility
 ### Output:
 Each run will generate timestamped results directory which contains:
-  - plot.png: Static plot containing:
-    - Logical error rate vs physical error rate (Monte Carlo vs analytical)
-    - Absolute error subplot |simulation − analytical| (log scale) for validation
+  - plot.png: Static plot containing LER vs_p_, Monte Carlo + Analytical results, absolute error subplot
   - plot.html: interactive Plotly html graph, useful for visualization and analytical curve
   - QECops_noise_results.txt: Table numerical values
 
 These outputs provide a direct comparison between simulation and analytical predictions, including quantitative validation through the absolute error subplot.
 
-### Reproducibility:
-  - All simulations are fully reproducible using the fixed random seeds specified in the CLI
-  - Noise models and decoding assumptions are expected to be explicitly and specifically defined
-  - Results can be regenerated or extended by changing simulation parameters
+### Noise Model and Assumptions:
+- Independent, uncorrelated bit flip noise (for now)
+- Classical repetition code with majority vote decoding
+- Analytical baseline from the binomial distribution
 
-Future additions (v2 plans):
+This tool takes a noise assumption as input and shows you what error correction looks like under that assumption, it does not implement new codes or claim theoretical thresholds. It does not model hardware directly.
+
+### Limitations:
+- Noise is assumed to be independent, no correlated or biased errors YET
+- Only repetition codes and majority-vote decoding are currently supported
+- Does not connect with real hardware
+
+**Future additions (v2 plans):**
   - Extended noise models (biased, correlated)
   - Log scale plots for Monte Carlo (users can plot LER on a log scale, clear error suppression, effective distance scaling)
   - Seed control per-p (use rng across entire sweep, improves statistical independence and interpretation)
@@ -148,10 +107,8 @@ Future additions (v2 plans):
 - Special thanks to _Dr. Thomas Scruby_ from the Okinawa Institute of Science and Technology (OIST) for external review and possible extensions in this project
 
 ### License:
-If used or mentioned in published works please cite in the recommended format.
+If used or mentioned in published works please cite in the recommended format and reference this repository.
 
 
 Copyright (c) [2025] [Jithesh Mithra].
 It is licensed under the MIT License, available at [https://github.com/JitheshMithra/QECops].
-
-Also check License page in files.
