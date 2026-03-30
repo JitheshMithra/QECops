@@ -15,7 +15,7 @@ This tool is a lightweight, open-source simulator for studying how noise assumpt
   - It decodes using majority-vote
   - It sweeps _p_ across a range which you can configure and estimates logical error rate with Monte Carlo estimation model
   - This tool computes the exact analytical baseline using the binomial distribution model
-  - It will output a plot with both corves and an absolute error subplot (log-scaled) to validate the agreement
+  - It will output a plot with both curves and an absolute error subplot (log-scaled) to validate the agreement
 
 Most QEC tools are held to large institutions or require significant setup. This tool runs from the command line and has no other dependencies, being fully reproducible with fixed seed.
 
