@@ -144,7 +144,7 @@ Future additions (v2 plans):
   - Switch from absolute error analysis to relative error analysis for better comparing in low probability regions
 
 ### Acknowledgements:
-- Special thanks to _Daniel Strano_ from the Unitary Fund for external review and consistent feedback and mentoring on my methodology
+- Special thanks to _Daniel Strano_, developer of Qrack, from the Unitary Fund for external review and consistent feedback and mentoring on my methodology
 - Special thanks to _Dr. Thomas Scruby_ from the Okinawa Institute of Science and Technology (OIST) for external review and possible extensions in this project
 
 ### License:
