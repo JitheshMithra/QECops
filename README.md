@@ -99,7 +99,6 @@ This tool takes a noise assumption as input and shows you what error correction 
 
 ### Acknowledgements:
 - Special thanks to _Daniel Strano_, developer of Qrack, from the Unitary Fund for external review and consistent feedback and mentoring on my methodology
-- Special thanks to _Dr. Thomas Scruby_ from the Okinawa Institute of Science and Technology (OIST) for external review and possible extensions in this project
 
 ### License:
 If used or mentioned in published works please cite in the recommended format and reference this repository.
