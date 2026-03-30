@@ -19,11 +19,6 @@ This tool is a lightweight, open-source simulator for studying how noise assumpt
 
 Most QEC tools are held to large institutions or require significant setup. This tool runs from the command line and has no other dependencies, being fully reproducible with fixed seed.
 
-**Project status:**
-
-v1 has been successfully pushed! v2 planning/coding has begun.
-Future extensions/ideas are seen down below under v2 plans.
-
 **Current Project structure:**
 ```
 src/
