@@ -5,6 +5,9 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19410366.svg)](https://doi.org/10.5281/zenodo.19410366)
 ![Python](https://img.shields.io/badge/python-3.10-blue)
 ![License](https://img.shields.io/badge/license-MIT-green) 
+![Reproducible](https://img.shields.io/badge/reproducible-yes-brightgreen)
+![Status](https://img.shields.io/badge/status-active-blue)
+![Field](https://img.shields.io/badge/field-quantum%20computing-purple)
 
 **Example Result:**
 Logical error rate vs physical error rate for n=3,5,7 repetition codes, with analytical (binomial)
