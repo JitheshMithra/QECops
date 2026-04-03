@@ -3,8 +3,8 @@
 **Status:** Baseline implementation with analytical validation; ACTIVE
 # QECops - Reproducible Quantum Error Correction Simulator 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19410366.svg)](https://doi.org/10.5281/zenodo.19410366)
-![Python](https://img.shields.io/badge/Python-3.10-blue)
 ![License](https://img.shields.io/badge/License-MIT-green) 
+![Python](https://img.shields.io/badge/Python-3.10-blue)
 ![Field](https://img.shields.io/badge/Field-quant--ph-purple)
 
 **Example Result:**
