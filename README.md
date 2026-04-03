@@ -113,10 +113,9 @@ This tool takes a noise assumption as input and shows you what error correction 
 ### License:
 If used or mentioned in published works please cite in the recommended format and reference this repository.
 
+Copyright (c) [2025] [Jithesh Mithra].
+It is licensed under the MIT License, available at [https://github.com/JitheshMithra/QECops].
+
 **Contact**: 
 - jitheshmithra412 [at] gmail [dot] com
 - https://www.linkedin.com/in/jitheshmithra/ 
-
-
-Copyright (c) [2025] [Jithesh Mithra].
-It is licensed under the MIT License, available at [https://github.com/JitheshMithra/QECops].
