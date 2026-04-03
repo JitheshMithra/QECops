@@ -40,6 +40,7 @@ ExampleResult.png
 ```
 ## Technical Reports:
 A detailed explanation of the methodology, experiments, and results is available in the REPORTS folder.
+
 **DOI**: [https://doi.org/10.5281/zenodo.19410366](https://doi.org/10.5281/zenodo.19410366)
 
 **See /REPORTS for excecuted experiments and more on the stored technical reports related to this project and its methodology**
