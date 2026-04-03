@@ -117,5 +117,5 @@ Copyright (c) [2025] [Jithesh Mithra].
 It is licensed under the MIT License, available at [https://github.com/JitheshMithra/QECops].
 
 **Contact**: 
-- jitheshmithra412 [at] gmail [dot] com
-- https://www.linkedin.com/in/jitheshmithra/ 
+- _Email_: jitheshmithra412 [at] gmail [dot] com
+- _Linkedin_: https://www.linkedin.com/in/jitheshmithra/ 
