@@ -2,6 +2,9 @@
 
 **Status:** Baseline implementation with analytical validation
 # QECops - Reproducible Quantum Error Correction Simulator 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19410366.svg)](https://doi.org/10.5281/zenodo.19410366)
+![Python](https://img.shields.io/badge/python-3.10-blue)
+![License](https://img.shields.io/badge/license-MIT-green) 
 **Example Result:**
 Logical error rate vs physical error rate for n=3,5,7 repetition codes, with analytical (binomial)
 overlay and absolute error subplot on log scale
