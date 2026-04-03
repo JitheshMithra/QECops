@@ -7,7 +7,7 @@
 ![License](https://img.shields.io/badge/license-MIT-green) 
 ![Reproducible](https://img.shields.io/badge/reproducible-yes-brightgreen)
 ![Status](https://img.shields.io/badge/status-active-blue)
-![Field](https://img.shields.io/badge/field-quant-ph-purple)
+![Field](https://img.shields.io/badge/field-quant--ph-purple)
 
 **Example Result:**
 Logical error rate vs physical error rate for n=3,5,7 repetition codes, with analytical (binomial)
