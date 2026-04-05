@@ -113,7 +113,7 @@ This tool takes a noise assumption as input and shows you what error correction 
   - Exploring more advanced QEC codes using tools like [Stim](https://github.com/quantumlib/Stim)
 
 ### Acknowledgements:
-- Special thanks to _Daniel Strano_, developer of Qrack, from the Unitary Fund for external review and consistent feedback and mentoring on my methodology
+- Special thanks to _Daniel Strano_, developer of [Qrack](https://github.com/unitaryfoundation/qrack), from the Unitary Fund for external review and consistent feedback and mentoring on my methodology
 
 ### License:
 If used or mentioned in published works please cite in the recommended format and reference this repository.
