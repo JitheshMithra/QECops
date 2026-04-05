@@ -15,6 +15,8 @@ overlay and absolute error subplot on log scale
 
 This tool is a lightweight, open-source simulator for studying how noise assumptions affect Quantum Error Correction (QEC) performance. The question that it seeks to answer is: _How sensitive are QEC results to specific noise models?_
 
+QECops simulates how physical noise models translate into logical error rates in quantum error correction codes. It combines numerical simulation with analytical validation to study error behavior in repetition codes.
+
 ### What it does
   - This tool applies independent bit flip noise at rate _p_ to a repetition code of length _n_
   - It decodes using majority-vote
@@ -83,6 +85,8 @@ Each run will generate timestamped results directory which contains:
   - QECops_noise_results.txt: Table numerical values
 
 These outputs provide a direct comparison between simulation and analytical predictions, including quantitative validation through the absolute error subplot.
+
+The framework reproduces expected scaling behavior and highlights how different noise assumptions impact logical error suppression.
 
 ### Noise Model and Assumptions:
 - Independent, uncorrelated bit flip noise (for now)
