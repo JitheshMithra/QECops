@@ -106,6 +106,7 @@ This tool takes a noise assumption as input and shows you what error correction 
 
 **Future additions (v2 plans):**
   - Extended noise models (biased, correlated)
+  - Implement thresholds and acknowledge them in the system
   - Log scale plots for Monte Carlo (users can plot LER on a log scale, clear error suppression, effective distance scaling)
   - Seed control per-p (use rng across entire sweep, improves statistical independence and interpretation)
   - Parameter sweeps BEYOND p 
