@@ -117,7 +117,7 @@ This tool takes a noise assumption as input and shows you what error correction 
   - Circuit-level noise modeling
   - Exploring more advanced QEC codes using tools like [Stim](https://github.com/quantumlib/Stim)
   - Front-end UI, like a website
-  - Python library? make it pip installable
+  - Python library? make it pip installable/Installable Package
 
 ### Acknowledgements:
 - Special thanks to _Daniel Strano_, developer of [Qrack](https://github.com/unitaryfoundation/qrack), from the Unitary Foundation for external review and consistent feedback and mentoring on my methodology
